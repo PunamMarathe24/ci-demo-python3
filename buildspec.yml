@@ -2,19 +2,12 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18
     commands:
-      - echo "Installing dependencies"
-      - npm install
+      - echo "No dependencies for static site"
 
   build:
     commands:
-      - echo "Build phase (no compile needed for simple app)"
-
-  post_build:
-    commands:
-      - echo "Preparing artifacts"
+      - echo "Build step (nothing to compile)"
 
 artifacts:
   files:
